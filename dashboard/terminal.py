@@ -91,7 +91,7 @@ def render_dashboard(
         sig_table.add_column("Stop",   justify="right")
         sig_table.add_column("Target", justify="right")
 
-        for s in last_signals[-8:]:
+        for s in last_signals[-25:]:
             sig_val = s["signal"]
             sig_color = "green" if sig_val == "BUY" else ("red" if sig_val == "SELL" else "dim")
             sig_table.add_row(
